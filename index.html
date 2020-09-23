@@ -6,42 +6,64 @@
     <title>MoneyConvert</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">dólar</a></li>
-                <li>euro</li>
-                <li>libra</li>
-                <li>yen</li>
-                <li>rublos</li>
-                <li>bitcoin</li>
-            </ul>
-        </nav>
-    </header>
     <main>
         <div class="container">
-            <section class="convert">
-                <div class="row">
-                    <div class="col-12">
-                        <img src="img/dollarIcon.png" alt="Dollar">
-                    </div>
+            <div class="row">
+                <div class="title col-12">
+                    <h1>MoneyConvert</h1>
                 </div>
-                <div class="row">
-                    <label for="dolar">US$</label>
-                    <input name="dolar" id="dolar" type="text" oninput="dolarReal()" value="1">
-                    <label for="real">R$</label>
-                    <input name="real" id="real" type="text" oninput="realDolar()">
-                    
-                    <div class="col-12">
-                        Cotação atual: R$
-                        <label id="cotacao"></label>
-                    </div>
+                <div class="img col-12">
+                    <img src="img/dollarIcon.png" alt="Dollar">
                 </div>
-            </section>
+            </div>
+            <div class="row">
+                <section class="convert">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <button type="button" class="btn btn-outline-secondary">R$</button>
+                            <button type="button"
+                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">US$</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                        <div class="input-group-append">
+                            <button type="button" class="btn btn-outline-secondary">Action</button>
+                            <button type="button"
+                                class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Separated link</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+
+
+
         </div>
     </main>
     <footer>
