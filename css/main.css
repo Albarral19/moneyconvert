@@ -1,0 +1,40 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  background-color: white;
+  font-size: 24px;
+}
+
+main {
+  height: 100vh;
+  margin-top: 5%;
+  display: inline-block;
+}
+
+main h1 {
+  font-size: 4em;
+  padding: 2.5em 0;
+}
+
+main form {
+  padding-bottom: 3em;
+}
+
+main form .col-12 {
+  padding: 0 0.5em;
+}
+
+main form .col-12 select {
+  width: 100%;
+}
+
+main h2 {
+  font-size: 2em;
+  padding: 20% 0;
+  position: static;
+}
+/*# sourceMappingURL=main.css.map */

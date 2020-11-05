@@ -3,56 +3,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
     <title>MoneyConvert</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="fonts/Roboto/Roboto-Regular.ttf">
 </head>
 
 <body>
-    <div class="container">
-        <main>
+    <main>
+        <div class="container">
             <div class="row">
-                <div class="title col l12">
-                    <h1>MoneyConvert</h1>
-                </div>
+                <h1 class="col-12 text-center">Money Convert</h1>                
             </div>
-            <div class="row">
-                <div class="logo col l12">
-                    <img src="img/dollarIcon.png" alt="Coin" width="50%">
+            <form action="">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-3">
+                        <div class="form-group">
+                            <select class="form-control" id="currency1">
+                                <option>Dólar</option>
+                                <option>Real</option>
+                                <option>Euro</option>
+                                <option>Libra</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </main>
-        <section class="convert">
-            <div class="input-field col s12">
-                <div class="row">
-                    <select>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>                                        
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-3">
+                        <div class="form-group">
+                            <select class="form-control" id="currency2">
+                                <option>Dólar</option>
+                                <option>Real</option>
+                                <option>Euro</option>
+                                <option>Libra</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div class="form-group">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <label for="money1">Dólar</label>
-                    <input placeholder="Dólar" id="money1" type="text" value="">
-                    
-                </div>
-            </div>
-
-
-            <div class="row">
-                <div class="input-field col s12">
-                    <input placeholder="Real" id="money2" type="text" value="">
-                    <label for="money2">Real</label>
-                </div>
-            </div>
-        </section>
-
-    </div>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            </form>
+            <h2 class="text-center">more info <a href="#statistics"><button class="more-info btn btn-outline-primary"><i class="fas fa-chevron-down"></i></button></a></h2>
+            
+        </div>
+    </main>
+    <section class="statistics">
+        <a name="statistics"></a>
+        <div class="chart">
+            <h2>Real to dollar chart</h2>
+        </div>
+        <div class="stats">
+            <h2>Real to dollar stats</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th scope="col">last 30th</th>
+                    <th scope="col">last 90th</th>
+                </tr>
+                <tr>
+                    <th scope="row">low</th>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">high</th>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">avg</th>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <th scope="row">volallity</th>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about1">
+            <h2>About Real</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor tortor, rutrum in luctus sed,
+                rhoncus nec odio. Nam consequat nec nibh vitae placerat.
+                Ut facilisis urna non congue luctus. Nulla vulputate lectus porta turpis fringilla fermentum. Cras enim
+                nisl, pulvinar et convallis eu, hendrerit vitae sem.
+                Duis quis urna rhoncus massa auctor dignissim. In ac enim et eros consequat viverra. Ut elementum sapien
+                non eleifend tristique. Integer in felis malesuada,
+                rutrum purus convallis, viverra tortor. Mauris finibus ante et felis maximus vulputate.
+            </p>
+        </div>
+        <div class="about2">
+            <h2>About Dollar</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor tortor, rutrum in luctus sed,
+                rhoncus nec odio. Nam consequat nec nibh vitae placerat.
+                Ut facilisis urna non congue luctus. Nulla vulputate lectus porta turpis fringilla fermentum. Cras enim
+                nisl, pulvinar et convallis eu, hendrerit vitae sem.
+                Duis quis urna rhoncus massa auctor dignissim. In ac enim et eros consequat viverra. Ut elementum sapien
+                non eleifend tristique. Integer in felis malesuada,
+                rutrum purus convallis, viverra tortor. Mauris finibus ante et felis maximus vulputate.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>create by: <a href="https://www.github.com/Albarral19" target="_blank">Albarral19</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
     <script src="js/index.js"></script>
 </body>
 
