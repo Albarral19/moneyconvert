@@ -16,7 +16,7 @@
     <main>
         <div class="container">
             <div class="row">
-                <h1 class="col-12 text-center">Money Convert</h1>                
+                <h1 class="col-12 text-center">Money Convert</h1>
             </div>
             <form action="">
                 <div class="row justify-content-center">
@@ -40,8 +40,8 @@
                     <div class="col-12 col-lg-3">
                         <div class="form-group">
                             <select class="form-control" id="currency2">
-                                <option>Dólar</option>
                                 <option>Real</option>
+                                <option>Dólar</option>
                                 <option>Euro</option>
                                 <option>Libra</option>
                             </select>
@@ -54,72 +54,90 @@
                     </div>
                 </div>
             </form>
-            <h2 class="text-center">more info <a href="#statistics"><button class="more-info btn btn-outline-primary"><i class="fas fa-chevron-down"></i></button></a></h2>
-            
+            <h2 class="text-center">more info <a href="#statistics"><button class="more-info btn btn-outline-primary"><i
+                            class="fas fa-chevron-down"></i></button></a></h2>
+
         </div>
     </main>
     <section class="statistics">
         <a name="statistics"></a>
-        <div class="chart">
-            <h2>Real to dollar chart</h2>
-        </div>
-        <div class="stats">
-            <h2>Real to dollar stats</h2>
-            <table>
-                <tr>
-                    <th></th>
-                    <th scope="col">last 30th</th>
-                    <th scope="col">last 90th</th>
-                </tr>
-                <tr>
-                    <th scope="row">low</th>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <th scope="row">high</th>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <th scope="row">avg</th>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <th scope="row">volallity</th>
-                    <td>1</td>
-                    <td>2</td>
-                </tr>
-            </table>
+        <div class="container">
+            <div class="row">
+                <div class="chart col-12 col-lg-6">
+                    <h2>Real to dollar chart</h2>
+                    <canvas class="line-chart">
+
+                    </canvas>
+                </div>
+                <div class="stats col-12 col-lg-6">
+                    <h2>Real to dollar stats</h2>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th scope="col">last 30th</th>
+                            <th scope="col">last 90th</th>
+                        </tr>
+                        <tr>
+                            <th scope="row">low</th>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">high</th>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">avg</th>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">volallity</th>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
     <section class="about">
-        <div class="about1">
-            <h2>About Real</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor tortor, rutrum in luctus sed,
-                rhoncus nec odio. Nam consequat nec nibh vitae placerat.
-                Ut facilisis urna non congue luctus. Nulla vulputate lectus porta turpis fringilla fermentum. Cras enim
-                nisl, pulvinar et convallis eu, hendrerit vitae sem.
-                Duis quis urna rhoncus massa auctor dignissim. In ac enim et eros consequat viverra. Ut elementum sapien
-                non eleifend tristique. Integer in felis malesuada,
-                rutrum purus convallis, viverra tortor. Mauris finibus ante et felis maximus vulputate.
-            </p>
-        </div>
-        <div class="about2">
-            <h2>About Dollar</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor tortor, rutrum in luctus sed,
-                rhoncus nec odio. Nam consequat nec nibh vitae placerat.
-                Ut facilisis urna non congue luctus. Nulla vulputate lectus porta turpis fringilla fermentum. Cras enim
-                nisl, pulvinar et convallis eu, hendrerit vitae sem.
-                Duis quis urna rhoncus massa auctor dignissim. In ac enim et eros consequat viverra. Ut elementum sapien
-                non eleifend tristique. Integer in felis malesuada,
-                rutrum purus convallis, viverra tortor. Mauris finibus ante et felis maximus vulputate.
-            </p>
+        <div class="container">
+            <div class="row">
+                <div class="about1 col-12 col-lg-6">
+                    <h2>About Real</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor tortor, rutrum in luctus
+                        sed,
+                        rhoncus nec odio. Nam consequat nec nibh vitae placerat.
+                        Ut facilisis urna non congue luctus. Nulla vulputate lectus porta turpis fringilla fermentum.
+                        Cras enim
+                        nisl, pulvinar et convallis eu, hendrerit vitae sem.
+                        Duis quis urna rhoncus massa auctor dignissim. In ac enim et eros consequat viverra. Ut
+                        elementum sapien
+                        non eleifend tristique. Integer in felis malesuada,
+                        rutrum purus convallis, viverra tortor. Mauris finibus ante et felis maximus vulputate.
+                    </p>
+                </div>
+                <div class="about2 col-12 col-lg-6">
+                    <h2>About Dollar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor tortor, rutrum in luctus
+                        sed,
+                        rhoncus nec odio. Nam consequat nec nibh vitae placerat.
+                        Ut facilisis urna non congue luctus. Nulla vulputate lectus porta turpis fringilla fermentum.
+                        Cras enim
+                        nisl, pulvinar et convallis eu, hendrerit vitae sem.
+                        Duis quis urna rhoncus massa auctor dignissim. In ac enim et eros consequat viverra. Ut
+                        elementum sapien
+                        non eleifend tristique. Integer in felis malesuada,
+                        rutrum purus convallis, viverra tortor. Mauris finibus ante et felis maximus vulputate.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
-        <p>create by: <a href="https://www.github.com/Albarral19" target="_blank">Albarral19</a></p>
+        <p class="col-12 text-center">create by: <a href="https://www.github.com/Albarral19" target="_blank">Albarral19</a></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -127,6 +145,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
 </body>
 
