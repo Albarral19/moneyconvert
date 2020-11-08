@@ -23,16 +23,17 @@
                     <div class="col-12 col-lg-3">
                         <div class="form-group">
                             <select class="form-control" id="currency1">
-                                <option value="BRL">Real</option>
-                                <option value="USD">US Dollar</option>
-                                <option value="EUR">Euro</option>
-                                <option value= "ARS">Argentine Peso</option>
+                                <option value="BRL">Real (R$)</option>
+                                <option value="USD">US Dollar ($)</option>
+                                <option value="EUR">Euro (€)</option>
+                                <option value="CNY">Yuan (¥)</option>
+                                <option value= "BTC">Bitcoin (₿)</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="currencyInput1" value="1.00" oninput="convert('currencyInput2', 'currencyInput1')">
+                            <input type="money" class="form-control" id="currencyInput1" value="1" oninput="convert('currencyInput2', 'currencyInput1')" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -40,16 +41,17 @@
                     <div class="col-12 col-lg-3">
                         <div class="form-group">
                             <select class="form-control" id="currency2">
-                                <option value="USD">US Dollar</option>
-                                <option value="BRL">Real</option>                                
-                                <option value="EUR">Euro</option>
-                                <option value= "ARS">Argentine Peso</option>
+                                <option value="USD">US Dollar ($)</option>
+                                <option value="BRL">Real (R$)</option>                              
+                                <option value="EUR">Euro (€)</option>
+                                <option value="CNY">Yuan (¥)</option>
+                                <option value= "BTC">Bitcoin (₿)</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="currencyInput2" oninput="convert('currencyInput1','currencyInput2')">
+                            <input type="text" class="form-control" id="currencyInput2" oninput="convert('currencyInput1','currencyInput2')" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -147,8 +149,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
         integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-        crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+        crossorigin="anonymous"></script>        
+    <script src="js/index.js"></script>    
 </body>
 
 </html>
