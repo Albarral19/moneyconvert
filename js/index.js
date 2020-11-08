@@ -1,30 +1,33 @@
-//#region Cotação do Dólar
-    var url_cotacao = "https://economia.awesomeapi.com.br/all/USD-BRL";
-    var dolarHoje;
-    let request = new XMLHttpRequest();
-    request.open('GET', url_cotacao);
-    request.send();
+var url = "https://economia.awesomeapi.com.br/json/all"
+var currency1 = $('#currency1 option:selected').val();
+var currency2 = $('#currency2 option:selected').val();
 
-    request.onload = function(){
-        dolarHoje = JSON.parse(request.responseText).USD.bid;
-        let cotacao = document.querySelector('#cotacao');
-        cotacao.innerHTML = dolarHoje;
-        document.getElementById("real").value = dolarHoje;       
-    };
-//#endregion
+$("#currency1").change(function () {
+    currency1 = $('#currency1 option:selected').val();
+});
 
-    function dolarReal()
-    {
-        var input = document.getElementById("dolar");
-        input.value = input.value.replace(/[a-zA-Z]/g,'');
+$("#currency2").change(function () {
+    currency2 = $('#currency2 option:selected').val();
+});
 
-        document.getElementById("real").value = (document.getElementById("dolar").value * dolarHoje).toFixed(2);    
-    }
+const currencyInfo =
+    fetch(url)
+        .then(function (response) {
+            return response.json()
+        })
 
-    function realDolar() 
-    {
-        var input = document.getElementById("real");
-        input.value = input.value.replace(/[a-zA-Z]/g,'');
+console.log(currencyInfo);
 
-        document.getElementById("dolar").value = (document.getElementById("real").value / dolarHoje).toFixed(2);     
-    }
+
+
+function convert(targetCurrency, changedCurrency) {
+    let input = document.getElementById(changedCurrency);
+    input.value = input.value.replace(/[a-zA-Z]/g, '').replace(',', '.');
+
+    document.getElementById(targetCurrency).value = (document.getElementById(changedCurrency).value * 2);
+}
+
+
+
+
+

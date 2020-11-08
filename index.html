@@ -23,16 +23,16 @@
                     <div class="col-12 col-lg-3">
                         <div class="form-group">
                             <select class="form-control" id="currency1">
-                                <option>Dólar</option>
-                                <option>Real</option>
-                                <option>Euro</option>
-                                <option>Libra</option>
+                                <option value="BRL">Real</option>
+                                <option value="USD">US Dollar</option>
+                                <option value="EUR">Euro</option>
+                                <option value= "ARS">Argentine Peso</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="currencyInput1" value="1.00" oninput="convert('currencyInput2', 'currencyInput1')">
                         </div>
                     </div>
                 </div>
@@ -40,16 +40,16 @@
                     <div class="col-12 col-lg-3">
                         <div class="form-group">
                             <select class="form-control" id="currency2">
-                                <option>Real</option>
-                                <option>Dólar</option>
-                                <option>Euro</option>
-                                <option>Libra</option>
+                                <option value="USD">US Dollar</option>
+                                <option value="BRL">Real</option>                                
+                                <option value="EUR">Euro</option>
+                                <option value= "ARS">Argentine Peso</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
                         <div class="form-group">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" id="currencyInput2" oninput="convert('currencyInput1','currencyInput2')">
                         </div>
                     </div>
                 </div>
