@@ -9,7 +9,7 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="fonts/Roboto/Roboto-Regular.ttf">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,13 +27,14 @@
                                 <option value="USD">US Dollar ($)</option>
                                 <option value="EUR">Euro (€)</option>
                                 <option value="CNY">Yuan (¥)</option>
-                                <option value= "BTC">Bitcoin (₿)</option>
+                                <option value="BTC">Bitcoin (₿)</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
                         <div class="form-group">
-                            <input type="money" class="form-control" id="currencyInput1" value="1" oninput="convert('currencyInput2', 'currencyInput1')" autocomplete="off">
+                            <input type="money" class="form-control" id="currencyInput1"
+                                oninput="convert('currencyInput2', 'currencyInput1')" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -42,16 +43,17 @@
                         <div class="form-group">
                             <select class="form-control" id="currency2">
                                 <option value="USD">US Dollar ($)</option>
-                                <option value="BRL">Real (R$)</option>                              
+                                <option value="BRL">Real (R$)</option>
                                 <option value="EUR">Euro (€)</option>
                                 <option value="CNY">Yuan (¥)</option>
-                                <option value= "BTC">Bitcoin (₿)</option>
+                                <option value="BTC">Bitcoin (₿)</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-12 col-lg-9">
                         <div class="form-group">
-                            <input type="text" class="form-control" id="currencyInput2" oninput="convert('currencyInput1','currencyInput2')" autocomplete="off">
+                            <input type="text" class="form-control" id="currencyInput2" value="1"
+                                oninput="convert('currencyInput1','currencyInput2')" autocomplete="off">
                         </div>
                     </div>
                 </div>
@@ -139,7 +141,8 @@
         </div>
     </section>
     <footer>
-        <p class="col-12 text-center">create by: <a href="https://www.github.com/Albarral19" target="_blank">Albarral19</a></p>
+        <p class="col-12 text-center">create by: <a href="https://www.github.com/Albarral19"
+                target="_blank">Albarral19</a></p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -149,8 +152,8 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
         integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
-        crossorigin="anonymous"></script>        
-    <script src="js/index.js"></script>    
+        crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

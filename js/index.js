@@ -5,8 +5,8 @@ $(document).ready(function() {
         return response.json();
       }).then(currencyJson => {
        var data = currencyJson;
-        document.getElementById("currencyInput2").value = data.USD.bid;
-      });  
+        document.getElementById("currencyInput1").value = data.USD.bid;
+      });
 });
 
 var currency1 = $('#currency1 option:selected').val();
@@ -14,18 +14,22 @@ var currency2 = $('#currency2 option:selected').val();
 
 $("#currency1").change(function () {
     currency1 = $('#currency1 option:selected').val();
-    convert('currencyInput1', 'currencyInput2');
+    convert('currencyInput1', 'currencyInput2');      
 });
 
 $("#currency2").change(function () {
     currency2 = $('#currency2 option:selected').val();
-    convert('currencyInput2', 'currencyInput1');
+    convert('currencyInput2', 'currencyInput1');    
 });
 
 async function convert(targetCurrency, changedCurrency) {
     let input = document.getElementById(changedCurrency);
     input.value = input.value.replace(/[a-zA-Z]/g, '').replace(',', '.');
+    let matchesCount = input.value.split(".").length - 1;
 
+    if (matchesCount > 1)
+        input.value = input.value.slice(0, -1);
+    
     const response = await fetch(urlAll);
     const data = await response.json();
 
@@ -76,4 +80,3 @@ async function convert(targetCurrency, changedCurrency) {
 
     document.getElementById(targetCurrency).value = (document.getElementById(changedCurrency).value *  bidChanged / bidTarget);
 };
-

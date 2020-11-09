@@ -1,12 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: black;
-  background-color: white;
-  font-size: 24px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 main {
@@ -16,8 +9,8 @@ main {
 }
 
 main h1 {
-  font-size: 4em;
-  padding: 2.5em 0;
+  font-size: 5em;
+  padding: 2em 0;
 }
 
 main form {
