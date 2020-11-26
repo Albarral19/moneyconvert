@@ -1,0 +1,23 @@
+h1{
+    padding: 10px;
+}
+.contato{
+    width: 100%;
+    max-width: 500px;
+    form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        .field{
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #DDD;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+        textarea{
+            height: 200px;
+        }
+        
+    }
+}
