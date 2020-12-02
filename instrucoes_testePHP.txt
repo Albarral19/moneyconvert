@@ -1,0 +1,11 @@
+INSTRUÇÕES EXTRAS PARA O TESTE
+
+-Preencher a linha 9, do arquivo email.php com o email do destinatário do teste!
+
+-Para o funcionamento do PHPMAILER com o Xampp
+	Finalize o Xampp totalmente
+	Ir até C:\xampp\php
+	Abra o arquivo php.ini
+	Trocar a linha : ;extension=openssl
+	Para: extension=openssl
+	Salvar php.ini
