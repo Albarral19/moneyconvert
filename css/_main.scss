@@ -31,8 +31,7 @@ main{
 
     h2{
         font-size: 2em;
-        padding: 20% 0;
-        position: static;
+        padding: 1em 0;
         button{
 
         }
@@ -40,10 +39,16 @@ main{
     }
 }
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 1386px){
     main{
+        margin-top: 0;
+        h1{
+            font-size: 4em;
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
         form{
-
+            
         }
     }
 }
